@@ -1,12 +1,12 @@
 name: my-first-workflow
-  on: push
+on: push
 
-  jobs:
-    name: JOB1
-    runs-on: ubuntu-latest
-    steps: 
-      -name: sunning a command
-       run: echo "My first workflow"
-      -name: checking date
-        run: date
+jobs:
+  name: JOB1
+  runs-on: ubuntu-latest
+  steps: 
+    -name: running a command
+     run: echo "My first workflow"
+    -name: checking date
+     run: date
     
