@@ -2,11 +2,11 @@ name: my-first-workflow
 on: push
 
 jobs:
-  name: JOB1
-  runs-on: ubuntu-latest
-  steps: 
-    -name: running a command
-     run: echo "My first workflow"
-    -name: checking date
-     run: date
-    
+  job1:
+    name: JOB1
+    runs-on: ubuntu-latest
+    steps: 
+      - name: running a command on job1
+        run: echo "My first workflow"
+      - name: checking date
+        run: date
