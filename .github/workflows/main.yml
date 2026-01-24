@@ -9,4 +9,8 @@ jobs:
       - name: running a command on job1
         run: echo "My first workflow"
       - name: checking date
-        run: date
+        run: |
+          date
+          ip a
+          whoami
+          cat /etc/os-release
