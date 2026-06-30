@@ -30,7 +30,7 @@ jobs:
          cat /etc/os-release
   job4:
     name: fourth
-    needs: [job1, job3]
+    needs: [job2, job3]
     runs-on: macos-latest
     steps:
     - name: mac os cmds
