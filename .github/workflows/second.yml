@@ -7,8 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: running fisrt command
-        run: ls -la
-        sleep 5
+        run: |
+          ls -la
+          sleep 5
+        
   job2:
     name: sencond
     needs: job1
