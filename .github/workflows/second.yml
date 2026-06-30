@@ -3,12 +3,22 @@ on: push
 
 jobs:
   job1:
-  - name: DIR
-  runs-on: ubuntu-latest
-  steps:
-    - name: directory checking
-    run: ls -la
+    name: First
+    runs-on: ubuntu-latest
+    steps:
+      - name: running fisrt command
+        run: ls -la
+        sleep 5
   job2:
-  - name: date
-  needs: job1
-  run: date
+    name: sencond
+    needs: job1
+    runs-on: windows-2022
+    steps:
+      - name: checking windows version
+        run: |
+          winver
+          ipconfig
+          
+      
+      
+    
