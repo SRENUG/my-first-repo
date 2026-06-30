@@ -28,10 +28,10 @@ jobs:
     - name: testing
       run: |
          pwd
-         car /etc/os-relase
+         cat /etc/os-relase
   job4:
     name: fourth
-    needs: [job1, job3]
+    needs: job1
     runs-on: macos-latest
     steps:
     - name: mac os cmds
