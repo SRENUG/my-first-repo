@@ -1,0 +1,14 @@
+name: second workflow
+on: push
+
+jobs:
+  job1:
+  - name: DIR
+  runs-on: ubuntu-latest
+  steps:
+    - name: directory checking
+    run: ls -la
+  job2:
+  - name: date
+  needs: job1
+  run: date
