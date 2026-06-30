@@ -22,7 +22,6 @@ jobs:
           ipconfig
   job3:
     name: third
-    needs: job2
     runs-on: ubuntu-latest
     steps:
     - name: testing
