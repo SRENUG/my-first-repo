@@ -1,0 +1,10 @@
+name: my first workflow-1
+on: push
+
+jobs:
+  job1:
+   name: JOB1
+   runs-on: ubuntu-latest
+   steps:
+     - name: "cheking directory"
+     run: ls -la
