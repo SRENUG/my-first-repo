@@ -3,7 +3,7 @@ on: push
 
 jobs:
   job1:
-    name: First
+    name: first
     runs-on: ubuntu-latest
     steps:
       - name: running fisrt command
@@ -20,7 +20,15 @@ jobs:
         run: |
           winver
           ipconfig
-          
-      
-      
+  job3:
+    name: third
+    needs: [job1, job2]
+    runs-on: ubuntu-latest
+    steps:
+    - name: testing
+      run: |
+         pwd
+         whoami
+         date
+         
     
