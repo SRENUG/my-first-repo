@@ -28,8 +28,19 @@ jobs:
     - name: testing
       run: |
          pwd
-         whoami
-         date
+         car /etc/os-relase
+  job4:
+    name: fourth
+    needs: [job1, job3]
+    runs-on: macos-latest
+    steps:
+    - name: mac os cmds
+      run: |
+        ifconfig
+        date
+        ls -la
+        whoami
+        date
          
          
     
